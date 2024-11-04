@@ -4,9 +4,17 @@
   Quakenet es una aplicación web moderna diseñada para proporcionar soluciones integrales para la gestión y análisis de riesgos. Además de ofrecer una experiencia de usuario fluida y eficiente.
 </p>
 
-<p>
-  Quicknet es una aplicación web moderna diseñada para proporcionar soluciones integrales para la gestión y análisis de riesgos. Además de ofrecer una experiencia de usuario fluida y eficiente.
-</p>
+
+### Participantes
+
+- Almerco Rojas, Jocelyn Damaly - u20221G068
+- Chi Cruzatt, Kevin Jorge - u202313655
+- Inga Orihuela Christian Fabrizio - u20231C111
+- Jiménez Guerra Gianmarco Fabian - u202123843
+- Lucas Moreto, James - u202317816
+- Oroncoy Almeyda Alejandro - u202313397
+- Rivera Sosa Eduardo Gael - u202312222
+- Tantaleán Mesta, Guillermo Fabian - u202311958
 
 ---
 
