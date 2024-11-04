@@ -7,20 +7,21 @@ import {
 } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
 import Logo from "@/assets/logo.png";
+import "@/styles/modules/header.css";
 
 const Header = () => {
   return (
-    <header className="px-4 fixed left-0 w-full lg:px-6 h-14 bg-animation z-50">
-      <nav className="flex items-center justify-between h-full max-w-7xl mx-auto">
-        <a href="/" className="flex items-center justify-center gap-1">
-          <img src={Logo.src} alt="QuakeNet" className="size-9" />
-          <h1 className="text-lg font-bold">QueakeNet</h1>
+    <header className="header header--lg-padding">
+      <nav className="header__nav">
+        <a href="/" className="header__logo">
+          <img src={Logo.src} alt="QuakeNet" className="header__logo-image" />
+          <h1 className="header__logo-text">QueakeNet</h1>
         </a>
-        <ul className="hidden gap-4 sm:gap-6 lg:flex">
+        <ul className="header__nav-list header__nav-list--lg-gap header__nav-list--visible">
           <li>
             <a
               href="/#soluciones"
-              className="text-sm font-medium hover:underline underline-offset-4"
+              className="header__nav-item"
             >
               Soluciones
             </a>
@@ -28,7 +29,7 @@ const Header = () => {
           <li>
             <a
               href="/sobre-nosotros"
-              className="text-sm font-medium hover:underline underline-offset-4"
+              className="header__nav-item"
             >
               Sobre Nosotros
             </a>
@@ -36,7 +37,7 @@ const Header = () => {
           <li>
             <a
               href="#contacto-empresa"
-              className="text-sm font-medium hover:underline underline-offset-4"
+              className="header__nav-item"
             >
               Contacto Empresa
             </a>
@@ -44,18 +45,18 @@ const Header = () => {
         </ul>
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="lg:hidden">
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Toggle navigation menu</span>
+            <Button variant="outline" size="icon" className="header__menu-button">
+              <MenuIcon className="header__menu-icon" />
+              <span className="header__sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent>
-            <ul className="grid gap-4 py-4">
+          <SheetContent className="header__sheet">
+            <ul>
               <li>
                 <SheetClose asChild>
                   <a
                     href="/#soluciones"
-                    className="text-sm font-medium hover:underline underline-offset-4"
+                    className="header__sheet-item"
                   >
                     Soluciones
                   </a>
@@ -65,7 +66,7 @@ const Header = () => {
                 <SheetClose asChild>
                   <a
                     href="/sobre-nosotros"
-                    className="text-sm font-medium hover:underline underline-offset-4"
+                    className="header__sheet-item"
                   >
                     Sobre Nosotros
                   </a>
@@ -75,7 +76,7 @@ const Header = () => {
                 <SheetClose asChild>
                   <a
                     href="#contacto-empresa"
-                    className="text-sm font-medium hover:underline underline-offset-4"
+                    className="header__sheet-item"
                   >
                     Contacto Empresa
                   </a>
