@@ -8,9 +8,26 @@
 
 **CHANGELOG**
 
+- _0.2.4_
+
+  - Se hizo refactorización del codigo CSS, pasando a BEM CSS.
+  
+- _0.2.3_
+
+  - Se hizo refactorización de los componentes de shadcn
+
+- _0.2.2_
+
+  - Se añadió "sharp" como optimizador de imagenes
+
+- _0.2.1_
+
+  - Se arregló el código producido en CI/CD.
+
+
 - _0.2.0_
 
-  - Se añadió la nueva pagina sobre-nostros.
+  - Se añadió la nueva pagina sobre-nosotros.
   - Se creó los componentes AboutUs, MisionVision y OurTeam.
 
 - _0.1.0_
