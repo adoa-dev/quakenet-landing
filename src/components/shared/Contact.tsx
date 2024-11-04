@@ -2,6 +2,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import "@/styles/modules/contact.css";
 
 const Contact = () => {
   return (
@@ -25,11 +26,7 @@ const Contact = () => {
                 <Label htmlFor="name" className="contact__label">
                   Nombre
                 </Label>
-                <Input
-                  id="name"
-                  placeholder="Ingresa tu nombre"
-                  className="contact__input"
-                />
+                <Input id="name" placeholder="Ingresa tu nombre" />
               </div>
               <div className="contact__field">
                 <Label htmlFor="email" className="contact__label">
@@ -39,7 +36,6 @@ const Contact = () => {
                   id="email"
                   type="email"
                   placeholder="Ingresa tu correo electrónico"
-                  className="contact__input"
                 />
               </div>
               <div className="contact__field">
@@ -49,10 +45,9 @@ const Contact = () => {
                 <Textarea
                   id="message"
                   placeholder="Escribe tu mensaje"
-                  className="contact__textarea"
                 />
               </div>
-              <Button type="submit" className="contact__button">
+              <Button type="submit">
                 Enviar
               </Button>
             </form>
