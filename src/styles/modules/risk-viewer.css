@@ -1,0 +1,124 @@
+/* Risk Visualization Section */
+.risk-visualization {
+  width: 100%;
+  background-color: var(--bg-muted);
+}
+
+.risk-visualization--padding {
+  padding-top: 3rem; /* 12 */
+  padding-bottom: 3rem; /* 12 */
+}
+
+@media (min-width: 768px) {
+  .risk-visualization--padding {
+    padding-top: 6rem; /* 24 */
+    padding-bottom: 6rem; /* 24 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .risk-visualization--padding {
+    padding-top: 8rem; /* 32 */
+    padding-bottom: 8rem; /* 32 */
+  }
+}
+
+.risk-visualization__container {
+  max-width: 1200px; /* Customize as needed */
+  margin: 0 auto;
+  padding-left: 1rem; /* 4 */
+  padding-right: 1rem; /* 4 */
+}
+
+/* Header Section */
+.risk-visualization__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* 4 */
+}
+
+.risk-visualization__badge {
+  display: inline-block;
+  background-color: var(--bg-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem; /* lg */
+  font-size: 0.875rem; /* sm */
+}
+
+.risk-visualization__title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .risk-visualization__title {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+.risk-visualization__description {
+  max-width: 900px;
+  color: var(--text-muted-foreground);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .risk-visualization__description {
+    font-size: 1.25rem; /* xl */
+  }
+}
+
+/* Map Wrapper */
+.risk-visualization__map-wrapper {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 80rem; /* 5xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.risk-visualization__map {
+  position: relative;
+  height: 500px;
+  border-radius: 1rem; /* xl */
+  overflow: hidden;
+}
+
+/* Legend */
+.risk-visualization__legend {
+  position: absolute;
+  bottom: 1.5rem; /* 6 */
+  left: 1.5rem; /* 6 */
+  background-color: rgba(var(--bg-background), 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem; /* md */
+  font-size: 0.875rem; /* sm */
+  z-index: 20;
+}
+
+.risk-visualization__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 2 */
+}
+
+.risk-visualization__indicator {
+  width: 0.75rem; /* 3 */
+  height: 0.75rem; /* 3 */
+  border-radius: 50%;
+}
+
+.risk-visualization__indicator--high {
+  background-color: #f87171; /* red-500 */
+}
+
+.risk-visualization__indicator--moderate {
+  background-color: #fbbf24; /* yellow-500 */
+}
+
+.risk-visualization__indicator--low {
+  background-color: #34d399; /* green-500 */
+}
