@@ -1,0 +1,113 @@
+/* Mission & Vision Section */
+.mission-vision {
+  width: 100%;
+  background-color: var(--bg-muted);
+}
+
+.mission-vision--padding {
+  padding-top: 3rem; /* 12 */
+  padding-bottom: 3rem; /* 12 */
+}
+
+@media (min-width: 768px) {
+  .mission-vision--padding {
+    padding-top: 6rem; /* 24 */
+    padding-bottom: 6rem; /* 24 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .mission-vision--padding {
+    padding-top: 8rem; /* 32 */
+    padding-bottom: 8rem; /* 32 */
+  }
+}
+
+.mission-vision__container {
+  max-width: 1200px; /* Customize as needed */
+  margin: 0 auto;
+  padding-left: 1rem; /* 4 */
+  padding-right: 1rem; /* 4 */
+}
+
+.mission-vision__grid {
+  display: grid;
+  gap: 2rem; /* 8 */
+}
+
+@media (min-width: 768px) {
+  .mission-vision__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; /* 12 */
+  }
+}
+
+/* Content Section */
+.mission-vision__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 4 */
+}
+
+.mission-vision__badge {
+  display: inline-block;
+  background-color: var(--bg-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem; /* lg */
+  font-size: 0.875rem; /* sm */
+}
+
+.mission-vision__title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .mission-vision__title {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+.mission-vision__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* 4 */
+}
+
+.mission-vision__subtitle {
+  font-size: 1.25rem; /* xl */
+  font-weight: bold;
+}
+
+.mission-vision__description {
+  color: var(--text-muted-foreground);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .mission-vision__description {
+    font-size: 1.125rem; /* base */
+  }
+}
+
+@media (min-width: 1280px) {
+  .mission-vision__description {
+    font-size: 1.25rem; /* xl */
+  }
+}
+
+/* Image Section */
+.mission-vision__image-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.mission-vision__image {
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem; /* xl */
+  object-fit: cover;
+}

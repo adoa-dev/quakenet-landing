@@ -1,0 +1,139 @@
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding-top: 1.5rem; /* 6 */
+  padding-bottom: 3rem; /* 12 */
+}
+
+.hero--padding {
+  padding-top: 3rem; /* md:pt-12 */
+  padding-bottom: 6rem; /* md:pb-24 */
+}
+
+.hero__container {
+  max-width: 1200px; /* Adjust based on design */
+  margin: 0 auto;
+  padding-left: 1rem; /* 4 */
+  padding-right: 1rem; /* 4 */
+}
+
+.hero__grid {
+  display: grid;
+  gap: 1.5rem; /* 6 */
+}
+
+@media (min-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1fr 500px;
+    gap: 3rem; /* 12 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero__grid {
+    grid-template-columns: 1fr 550px;
+  }
+}
+
+/* Hero Content */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem; /* 4 */
+}
+
+.hero__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 2 */
+}
+
+.hero__title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .hero__title {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero__title {
+    font-size: 3.75rem; /* 6xl */
+  }
+}
+
+.hero__description {
+  max-width: 600px;
+  color: var(--text-muted); /* Define el color en variables CSS */
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__description {
+    font-size: 1.25rem; /* xl */
+  }
+}
+
+/* Button Group */
+.hero__button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 2 */
+}
+
+@media (min-width: 400px) {
+  .hero__button-group {
+    flex-direction: row;
+  }
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem; /* 10 */
+  padding: 0 2rem; /* 8 */
+  font-size: 0.875rem; /* sm */
+  font-weight: medium;
+  color: hsl(var(--primary-foreground)); /* Define en variables CSS */
+  background-color: hsl(var(--primary));
+  border-radius: 0.375rem; /* md */
+  box-shadow: hsl(var(--shadow));
+  transition: background-color 0.2s;
+}
+
+.hero__button:hover {
+  background-color: hsl(var(--primary-hover));
+}
+
+.hero__button:focus-visible {
+  outline: none;
+  ring: 1px solid hsl(var(--ring));
+}
+
+.hero__icon {
+  margin-left: 0.5rem;
+  width: 1rem; /* 4 */
+  height: 1rem; /* 4 */
+}
+
+/* Hero Image */
+.hero__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem; /* xl */
+  object-fit: cover;
+  overflow: hidden;
+}

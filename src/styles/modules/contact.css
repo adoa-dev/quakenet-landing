@@ -1,0 +1,133 @@
+/* Contact Section */
+.contact {
+  width: 100%;
+}
+
+.contact--padding {
+  padding-top: 3rem; /* 12 */
+  padding-bottom: 3rem; /* 12 */
+}
+
+@media (min-width: 768px) {
+  .contact--padding {
+    padding-top: 6rem; /* 24 */
+    padding-bottom: 6rem; /* 24 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact--padding {
+    padding-top: 8rem; /* 32 */
+    padding-bottom: 8rem; /* 32 */
+  }
+}
+
+.contact__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem; /* 4 */
+  padding-right: 1rem; /* 4 */
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* 4 */
+}
+
+.contact__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* 2 */
+}
+
+.contact__badge {
+  display: inline-block;
+  background-color: var(--bg-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem; /* lg */
+  font-size: 0.875rem; /* sm */
+}
+
+.contact__title {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .contact__title {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+.contact__description {
+  max-width: 900px;
+  color: var(--text-muted-foreground);
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact__description {
+    font-size: 1.25rem; /* xl */
+  }
+}
+
+/* Form Section */
+.contact__form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 3rem; /* 12 */
+}
+
+.contact__form {
+  display: grid;
+  gap: 1rem; /* 4 */
+}
+
+.contact__field {
+  display: grid;
+  gap: 0.5rem; /* 2 */
+}
+
+.contact__label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem; /* md */
+  font-size: 1rem;
+}
+
+.contact__textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.375rem; /* md */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact__button:hover {
+  background-color: var(--primary-hover);
+}
