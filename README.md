@@ -1,4 +1,8 @@
-<h1 align="center">Quicknet Landing</h1>
+<h1 align="center">Quakenet Landing</h1>
+
+<p>
+  Quakenet es una aplicación web moderna diseñada para proporcionar soluciones integrales para la gestión y análisis de riesgos. Además de ofrecer una experiencia de usuario fluida y eficiente.
+</p>
 
 <p>
   Quicknet es una aplicación web moderna diseñada para proporcionar soluciones integrales para la gestión y análisis de riesgos. Además de ofrecer una experiencia de usuario fluida y eficiente.
