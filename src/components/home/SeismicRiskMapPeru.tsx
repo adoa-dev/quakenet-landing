@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import '@/styles/modules/seismic-risk-map-peru.css'
 
 interface RiskPoint {
   id: number
@@ -39,7 +40,7 @@ const SeismicRiskMapPeru = () => {
   }, [])
 
   return (
-    <MapContainer center={[-9.1900, -75.0152]} zoom={5} className="h-full z-10">
+    <MapContainer center={[-9.1900, -75.0152]} zoom={5} className="seismic-riskmap-peru">
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

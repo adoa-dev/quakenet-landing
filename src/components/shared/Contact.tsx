@@ -5,45 +5,56 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <section id="contacto-empresa" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-              Contactar Empresa
-            </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+    <section id="contacto-empresa" className="contact contact--padding">
+      <div className="contact__container">
+        <div className="contact__content">
+          <div className="contact__text-group">
+            <div className="contact__badge">Contactar Empresa</div>
+            <h2 className="contact__title">
               Hablemos sobre cómo podemos ayudarte
             </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="contact__description">
               Nuestro equipo de expertos está listo para analizar tus
               necesidades y brindarte una solución a medida. Completa el
               formulario de contacto y nos comunicaremos contigo a la brevedad.
             </p>
           </div>
-          <div className="mx-auto w-full max-w-md">
-            <form className="grid gap-4">
-              <div className="grid gap-2">
-                <Label htmlFor="name">Nombre</Label>
-                <Input id="name" placeholder="Ingresa tu nombre" />
+          <div className="contact__form-wrapper">
+            <form className="contact__form">
+              <div className="contact__field">
+                <Label htmlFor="name" className="contact__label">
+                  Nombre
+                </Label>
+                <Input
+                  id="name"
+                  placeholder="Ingresa tu nombre"
+                  className="contact__input"
+                />
               </div>
-              <div className="grid gap-2">
-                <Label htmlFor="email">Correo Electrónico</Label>
+              <div className="contact__field">
+                <Label htmlFor="email" className="contact__label">
+                  Correo Electrónico
+                </Label>
                 <Input
                   id="email"
                   type="email"
                   placeholder="Ingresa tu correo electrónico"
+                  className="contact__input"
                 />
               </div>
-              <div className="grid gap-2">
-                <Label htmlFor="message">Mensaje</Label>
+              <div className="contact__field">
+                <Label htmlFor="message" className="contact__label">
+                  Mensaje
+                </Label>
                 <Textarea
                   id="message"
                   placeholder="Escribe tu mensaje"
-                  className="min-h-[100px]"
+                  className="contact__textarea"
                 />
               </div>
-              <Button type="submit">Enviar</Button>
+              <Button type="submit" className="contact__button">
+                Enviar
+              </Button>
             </form>
           </div>
         </div>
