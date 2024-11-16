@@ -16,7 +16,6 @@ Este proyecto se desarrolló utilizando una serie de tecnologías modernas que p
 
 - **React.js**: Librería JavaScript para construir interfaces de usuario.
 - **Astro**: Framework para generar sitios web estáticos.
-- **TailwindCSS**: Framework CSS para un diseño rápido y flexible.
 - **BEM CSS**: Metodología para una estructura de CSS más clara y modular.
 - **Sharp**: Herramienta para optimización de imágenes.
 
@@ -39,8 +38,11 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.2_
+- Se actualizó el responsive design de la página de **Contacto**.
+
 ### _Versión 0.3.1_
-- Configuración para firebase Hosting y github actions para CI.
+- Configuración para firebase Hosting.
 
 ### _Versión 0.3.0_
 - Configuración inicial de las dependencias (React.js, Astro).
