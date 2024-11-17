@@ -44,7 +44,7 @@ const integrants: Integrant[] = [
     avatar: Avatar7
   },
   {
-    name: "Fabrizio Orihuela",
+    name: "Christian Inga",
     avatar: Avatar8
   }
 ];

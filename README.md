@@ -37,6 +37,9 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.6_
+- Se actualizó textos en el apartado nuestro equipo.
+
 ### _Versión 0.3.5_
 - Se actualizó Github Actions scripts para CI.
 
