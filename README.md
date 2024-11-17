@@ -38,6 +38,9 @@ A continuación, se presentan los miembros del equipo y sus respectivos identifi
 
 ## 📜 Changelog
 
+### _Versión 0.3.4_
+- Se cambió la palabra "Listo" en el apartado de Protege tu negocio por la palabra "Estas listo" 
+
 ### _Versión 0.3.3_
 - Se actualizó la sección de **OurSolutions** y se mejoró la navegación en Header
 
